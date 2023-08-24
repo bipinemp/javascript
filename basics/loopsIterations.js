@@ -58,3 +58,38 @@
 //   }
 //   console.log(i);
 // }
+
+// if...else
+// const age = 18;
+
+// if (age >= 18) {
+//   console.log("Adult");
+// } else {
+//   console.log("Not Adult");
+// }
+
+// switch
+// const num = 1;
+// switch (num) {
+//   case 1:
+//     console.log("Sun");
+//     break;
+//   case 2:
+//     console.log("Mun");
+//     break;
+//   case 3:
+//     console.log("Tue");
+//     break;
+//   default:
+//     console.log("no day available");
+// }
+
+// Exception Handling
+
+// try..catch
+try {
+  const result = 10 / 0;
+  //   console.log(result);
+} catch (error) {
+  console.log("Error Message : ", error.message);
+}
