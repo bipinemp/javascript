@@ -30,36 +30,36 @@
 // console.log(User.greeting2());
 
 // singleton
-const tinderUser = new Object();
-tinderUser.id = 1;
-tinderUser.name = "bipin";
+// const tinderUser = new Object();
+// tinderUser.id = 1;
+// tinderUser.name = "bipin";
 // console.log(tinderUser);
 
-const regularUser = {
-  email: "bipin@gmail.com",
-  fullname: {
-    userfullname: {
-      firstname: "bipin",
-      lastname: "bhandari",
-    },
-  },
-};
+// const regularUser = {
+//   email: "bipin@gmail.com",
+//   fullname: {
+//     userfullname: {
+//       firstname: "bipin",
+//       lastname: "bhandari",
+//     },
+//   },
+// };
 
 // console.log(regularUser.fullname.userfullname);
 
-const obj1 = { 1: "a", 2: "b" };
-const obj2 = { 3: "c", 4: "d" };
+// const obj1 = { 1: "a", 2: "b" };
+// const obj2 = { 3: "c", 4: "d" };
 
 // const obj3 = { obj1, obj2 };
 // const obj3 = Object.assign({}, obj1, obj2);
 // const obj3 = { ...obj1, ...obj2 };
 // console.log(obj3);
 
-const user = {
-  id: 1,
-  name: "bipin",
-  isLoggedIn: true,
-};
+// const user = {
+//   id: 1,
+//   name: "bipin",
+//   isLoggedIn: true,
+// };
 
 // console.log(Object.keys(user));
 // console.log(Object.values(user));
@@ -68,9 +68,38 @@ const user = {
 // console.log(user.hasOwnProperty("name")); == true
 
 // destructuring
-const course = { coursename: "JS in ENG", price: "444" };
+// const course = { coursename: "JS in ENG", price: "444" };
 
-const { coursename } = course;
-const { coursename: cname } = course;
+// const { coursename } = course;
+// const { coursename: cname } = course;
 // console.log(coursename);
 // console.log(cname);
+
+// Prototype , prototypal inheritance
+// const obj = {
+//   id: 1,
+//   name: "bipin",
+//   isLoggedIn: true,
+//   greeting: function () {
+//     return this.name;
+//   },
+// };
+
+// const obj2 = {
+//   rollno: 21,
+//   name: "hari",
+//   __proto__: obj,
+// };
+
+// console.log(obj2.greeting());
+
+// const cities = ["chitwan", "gaindakot"];
+// Array.prototype.ToObject = function () {
+//   let obj = {};
+//   this.forEach((element) => {
+//     obj[element] = element;
+//   });
+//   return obj;
+// };
+
+// console.log(cities.ToObject());
