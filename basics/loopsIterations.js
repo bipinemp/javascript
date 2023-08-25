@@ -87,9 +87,33 @@
 // Exception Handling
 
 // try..catch
-try {
-  const result = 10 / 0;
-  //   console.log(result);
-} catch (error) {
-  console.log("Error Message : ", error.message);
-}
+// try {
+//   const result = 10 / 0;
+//   console.log(result);
+// } catch (error) {
+//   console.log("Error Message : ", error.message,error.stack,error.name);
+// }
+
+// throw
+// function validateNum(num) {s
+//   if (num === 2) {
+//     throw new Error("2 is not allowed");
+//   }
+//   return num;
+// }
+
+// console.log(validateNum(2));
+
+// Error Objects
+// class CustomError extends Error {
+//   constructor(message) {
+//     super(message);
+//     this.name = "CustomError";
+//   }
+// }
+
+// try {
+//   throw new CustomError("This is a custom error");
+// } catch (error) {
+//   console.error("An error occurred:", error.name, error.message);
+// }
