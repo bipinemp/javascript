@@ -4,6 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      button {
+        font-size: 3rem;
+        padding: 10px 30px;
+        margin: 40px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <button id="btn">Click</button>
+    <h1 id="text"></h1>
+
+    <script>
+      const btn = document.querySelector("#btn");
+      const txt = document.querySelector("#text");
+
+      btn.addEventListener("click", function () {
+        if (btn.innerText === "Click") {
+          btn.innerText = "Clicked";
+          handleText();
+        } else {
+          btn.innerText = "Click";
+          txt.innerText = "";
+        }
+      });
+
+      function handleText() {
+        let content = "I Clicked the button";
+        txt.innerText = content;
+      }
+    </script>
+  </body>
 </html>
